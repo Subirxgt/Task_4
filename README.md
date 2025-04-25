@@ -1,85 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sales & Profit Dashboard - Power BI</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #1e1e2f;
-      color: #f5f5f5;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #00c4cc;
-    }
-    .card {
-      background-color: #2a2a3d;
-      border-radius: 8px;
-      padding: 15px 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0, 196, 204, 0.3);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    code {
-      background-color: #333;
-      color: #fff;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-  </style>
-</head>
-<body>
+<h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #0066cc; padding: 20px 0; text-align: center;">
+  📊 Power BI Dashboard – Sales & Profit Analysis
+</h1>
 
-  <h1>📊 Sales & Profit Dashboard</h1>
+<div style="background: #ffffff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 800px; margin-left: auto; margin-right: auto;">
+  <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+    🎯 Objective
+  </h2>
+  <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+    Design an interactive dashboard using Power BI to analyze sales and profit trends. The goal was to offer stakeholders clear, actionable insights with KPI tracking, category-level breakdowns, and interactive filters.
+  </p>
+</div>
 
-  <div class="card">
-    <h2>🎯 Objective</h2>
-    <p>Design an interactive business dashboard using <strong>Power BI</strong> (or Tableau) to provide key performance insights for stakeholders.</p>
-  </div>
+<div style="background: #ffffff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 800px; margin-left: auto; margin-right: auto;">
+  <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+    🛠️ Tools Used
+  </h2>
+  <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+    <li style="margin: 8px 0;">Power BI for dashboard creation and visual storytelling</li>
+    <li style="margin: 8px 0;">DAX for creating Year, Quarter, and Year-Quarter fields</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>🛠️ Tools Used</h2>
-    <ul>
-      <li><strong>Power BI</strong> for data modeling and visualization</li>
-      <li>DAX for custom calculations (e.g., Year, Quarter)</li>
-    </ul>
-  </div>
+<div style="background: #ffffff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 800px; margin-left: auto; margin-right: auto;">
+  <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+    📌 Key Features Implemented
+  </h2>
+  <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+    <li style="margin: 8px 0;"><strong>KPI Cards</strong>: Total Sales and Total Profit</li>
+    <li style="margin: 8px 0;"><strong>Donut Charts</strong>: Sales by Category and Region</li>
+    <li style="margin: 8px 0;"><strong>Bar Chart</strong>: Profit by Sub-Category</li>
+    <li style="margin: 8px 0;"><strong>Additional Visual</strong>: Profit by Category</li>
+    <li style="margin: 8px 0;"><strong>Slicer</strong>: Interactive Sub-Category filter</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>📌 Key Tasks Completed</h2>
-    <ul>
-      <li><strong>KPI Cards:</strong> Total Sales and Total Profit</li>
-      <li><strong>Donut Charts:</strong> Sales by Category, Sales by Region</li>
-      <li><strong>Bar Chart:</strong> Profit by Sub-Category</li>
-      <li><strong>Slicer:</strong> Sub-Category filter for interactive analysis</li>
-      <li><strong>Profit by Category:</strong> For product-level insight</li>
-    </ul>
-  </div>
+<div style="background: #ffffff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 800px; margin-left: auto; margin-right: auto;">
+  <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+    ⏳ Time-Based Analysis
+  </h2>
+  <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+    <li style="margin: 8px 0;">Created <code style="background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">Year</code>, <code style="background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">Quarter (2024 only)</code> and <code style="background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.9em;">YearQuarter</code> columns using DAX</li>
+    <li style="margin: 8px 0;">Enabled time-series filtering and performance trend analysis over time</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>📈 Time Series & Interactivity</h2>
-    <ul>
-      <li>Created calculated columns:
-        <ul>
-          <li><code>Year</code>, <code>Quarter</code> (2024 only), and <code>Year-Quarter</code></li>
-        </ul>
-      </li>
-      <li>Enabled date-based filtering and trend analysis using slicers</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>🎨 Design & Navigation</h2>
-    <ul>
-      <li>Applied a consistent <strong>dark theme</strong> across visuals</li>
-      <li>Used color consistency and clean layout for clarity</li>
-      <li>Added a <strong>navigation menu</strong> using buttons and bookmarks to switch between report sections</li>
-    </ul>
-  </div>
-
-</body>
-</html>
+<div style="background: #ffffff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); max-width: 800px; margin-left: auto; margin-right: auto;">
+  <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
+    🎨 Design & Navigation
+  </h2>
+  <ul style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6;">
+    <li style="margin: 8px 0;">Used a consistent dark color theme for readability</li>
+    <li style="margin: 8px 0;">Clear layout structure with emphasis on insights</li>
+    <li style="margin: 8px 0;">Navigation menu created using Power BI buttons + bookmarks</li>
+    <li style="margin: 8px 0;">Report sections: Home, Year View, Quarterly View, and Trend Analysis</li>
+  </ul>
+</div>
